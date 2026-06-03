@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Make Kisi Sync
- * Plugin URI:  https://makesantafe.org
+ * Plugin Name: WooCommerce/Kisi Sync
+ * Plugin URI:  https://mindsharelabs.github.io/Make-Kisi-Sync/
  * Description: Syncs WooCommerce Memberships with Kisi access control. Grants door access when a membership becomes active and revokes it when cancelled or expired.
  * Version:     1.0.0
- * Author:      Make Santa Fe
- * Author URI:  https://makesantafe.org
+ * Author:      Mindshare Labs, Inc
+ * Author URI:  https://mind.sh/are
  * License:     GPL-2.0+
  * Text Domain: make-kisi-sync
  * Requires at least: 6.0
