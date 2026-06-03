@@ -5,7 +5,7 @@ A WordPress plugin that automatically syncs [WooCommerce Memberships](https://wo
 ## Requirements
 
 - WordPress 6.0+
-- PHP 8.1+
+- PHP 8.0+
 - WooCommerce
 - WooCommerce Memberships
 - A Kisi account with admin access

@@ -71,7 +71,7 @@ class Make_Kisi_API {
 	/**
 	 * Revoke a specific role assignment by ID.
 	 */
-	public function delete_role_assignment( int $role_assignment_id ): true|WP_Error {
+	public function delete_role_assignment( int $role_assignment_id ): bool|WP_Error {
 		$result = $this->request( 'DELETE', "/role_assignments/{$role_assignment_id}" );
 
 		if ( is_wp_error( $result ) ) {

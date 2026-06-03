@@ -9,7 +9,7 @@
  * License:     GPL-2.0+
  * Text Domain: make-kisi-sync
  * Requires at least: 6.0
- * Requires PHP: 8.1
+ * Requires PHP: 8.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
