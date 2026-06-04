@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce/Kisi Sync
  * Plugin URI:  https://mindsharelabs.github.io/Make-Kisi-Sync/
  * Description: Syncs WooCommerce Memberships with Kisi access control. Grants door access when a membership becomes active and revokes it when cancelled or expired.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Mindshare Labs, Inc
  * Author URI:  https://mind.sh/are
  * License:     GPL-2.0+
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'MAKE_KISI_SYNC_VERSION', '1.0.0' );
+define( 'MAKE_KISI_SYNC_VERSION', '1.0.1' );
 define( 'MAKE_KISI_SYNC_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once MAKE_KISI_SYNC_DIR . 'includes/class-kisi-api.php';

@@ -18,12 +18,7 @@ jobs:
       - name: Verify version matches tag
         run: |
           TAG="${GITHUB_REF_NAME#v}"
-          HEADER=$(grep -oP '(?<=Version:\s{5})\S+' make-kisi-sync.php || grep -oP "(?<=Version:\s{4})\S+" make-kisi-sync.php || grep -oP "(?<=Version:\s{3})\S+" make-kisi-sync.php || grep -oP "(?<=Version:\s{2})\S+" make-kisi-sync.php || grep -oP "(?<=Version:\s)\S+" make-kisi-sync.php)
-          HEADER=$(php -r "
-            \$src = file_get_contents('make-kisi-sync.php');
-            preg_match('/^\s*\*\s*Version:\s+(\S+)/m', \$src, \$m);
-            echo \$m[1] ?? '';
-          ")
+          HEADER=$(grep -oP 'Version:\s+\K\S+' make-kisi-sync.php | head -1)
           echo "Tag version:    $TAG"
           echo "Header version: $HEADER"
           if [ "$TAG" != "$HEADER" ]; then
