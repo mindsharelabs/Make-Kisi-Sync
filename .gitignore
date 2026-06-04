@@ -1,0 +1,9 @@
+# build output
+dist/
+*.zip
+
+# project context (not for public consumption)
+CLAUDE.md
+
+# macOS
+.DS_Store
